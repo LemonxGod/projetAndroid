@@ -13,6 +13,9 @@
             android:name=".Profile"
             android:exported="false" />
         <activity
+            android:name=".Inscription"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
