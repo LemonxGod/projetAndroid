@@ -135,7 +135,8 @@
             android:inputType="textPassword"
             android:textColor="#ffffff"
             android:textColorHint="#ffffff"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button"
