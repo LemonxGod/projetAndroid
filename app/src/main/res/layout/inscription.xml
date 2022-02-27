@@ -7,6 +7,17 @@
     android:background="#222222"
     tools:context=".Inscription">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="191dp"
+        android:layout_height="174dp"
+        android:layout_marginBottom="356dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_3" />
+
     <RelativeLayout
         android:layout_width="408dp"
         android:layout_height="545dp"
@@ -214,5 +225,14 @@
             android:background="@drawable/my_button"
             android:text="Valider" />
     </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="returnFunction"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
