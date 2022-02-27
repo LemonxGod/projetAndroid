@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "462946060372",
+    "project_id": "iris-android-338018",
+    "storage_bucket": "iris-android-338018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462946060372:android:61bacec79679ef295dc5c1",
+        "android_client_info": {
+          "package_name": "com.example.kamevent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462946060372-5ogimb7q4a06h7rk634s3i7onj27slce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK5m0BOQTAP4Fw-Sd183TIM2lPBAFeJ5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462946060372-5ogimb7q4a06h7rk634s3i7onj27slce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
