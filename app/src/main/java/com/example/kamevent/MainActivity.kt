@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     lateinit var buttonConnexion  : Button
 
     companion object{
-        var connection : Authenticate =  Authenticate()
+        var auth : Authenticate =  Authenticate()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
