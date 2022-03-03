@@ -8,6 +8,8 @@ import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.ktx.*
 import com.google.firebase.ktx.Firebase
 import org.w3c.dom.Document
+import java.util.*
+import kotlin.math.log
 
 class UserHandler {
     companion object{
@@ -24,6 +26,16 @@ class UserHandler {
                 }.addOnFailureListener{ e ->
                     Log.d(TAG, "Error creating a new user.", e)
                 }
+            return res
+        }
+
+        fun get(userId : String) : User?{
+            var res : User? = null
+            val docRef = Firebase.firestore.collection(dbName).document(userId)
+            docRef.get().addOnSuccessListener { documentSnapshot  ->
+                    res = documentSnapshot.toObject<User>()
+                Log.d(TAG, "Get : ${res.toString()}")
+            }
             return res
         }
     }

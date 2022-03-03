@@ -1,10 +1,10 @@
 package com.example.kamevent.schemas
 
 data class User(
-    val firstname: String,
-    val lastname: String,
-    val mail: String,
-    val age: Int,
-    val phone: String,
-    val password: String? = null
+    var firstname: String? = null,
+    var lastname: String? = null,
+    var mail: String? = null,
+    var age: Int? = null,
+    var phone: String? = null,
+    var password: String? = null
 )
