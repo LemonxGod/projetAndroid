@@ -41,6 +41,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
             }
         }
     }
+    public fun onClickHome (v: View){
+        setContentView(R.layout.activity_home)
+    }
 }
 
 annotation class override

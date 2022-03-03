@@ -9,6 +9,11 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdk 31
 
+    buildFeatures{
+        dataBinding true
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.example.kamevent"
         minSdk 21

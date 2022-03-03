@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#222222"
+    tools:context=".Posts">
+
+    <LinearLayout
+        android:id="@+id/footer_posts"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#8E24AA"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenu_posts">
+
+        <FrameLayout
+            android:id="@+id/comment_posts"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/action_footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#D81B60">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_posts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#353535"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/image_profile"
+            android:layout_width="80dp"
+            android:layout_height="57dp"
+            android:layout_weight="0"
+            android:background="#00ACC1"
+            android:clickable="false" />
+
+        <FrameLayout
+            android:id="@+id/name_profile"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="#039BE5">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/action_header"
+            android:layout_width="80dp"
+            android:layout_height="57dp"
+            android:layout_weight="0"
+            android:background="#00ACC1">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenu_posts"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="#353535"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_posts">
+
+        <FrameLayout
+            android:id="@+id/text_posts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5E35B1" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#43A047"
+        app:layout_constraintTop_toBottomOf="@+id/footer_posts">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
